@@ -1,0 +1,19 @@
+{
+  "name": "toyproblems",
+  "version": "1.0.0",
+  "description": "Toy Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.redventures.net/boot/toyproblems2016.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
