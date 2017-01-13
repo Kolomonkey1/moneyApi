@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
 
 // function editStudent(){
 // 	console.log("stage1")
@@ -11,8 +10,6 @@ import './index.css';
 // }
 
 ReactDOM.render(
-  <App 
-  	//editStudent={() => editStudent()}
-  />,
+  <App />,
   document.getElementById('root')
 );
