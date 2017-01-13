@@ -8,6 +8,7 @@ class Stocks extends Component {
 
   render() {
     console.log("Props.Stock - ", this.props.Stocks);
+    if(this.props.Stocks === undefined){
       return (
         // <div>
         //   // <div>Working</div>
@@ -15,10 +16,23 @@ class Stocks extends Component {
         //   <div>LTP: {this.props.state.LastTradePrice}</div>
         // </div>
         <div>
-          //neeed to loop through this.props.Stock for individual stocks
+          LOADING
         </div>
 
       );
+    }else {
+      return (
+        <div>
+          {this.props.Stocks.map(function(stock){
+            return (
+              <div>
+                {stock.symbol}
+              </div>
+            );
+          })}
+        </div>
+      )
+    }
     }
   }
 
