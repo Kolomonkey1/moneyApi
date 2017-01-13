@@ -1,0 +1,37 @@
+.App-header, .delete {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background: url("http://www.inmotiondesarrollohumano.com/wp-content/uploads/2013/10/checkmark_orange.png") no-repeat 50% 10%; 
+  background-color: #222;
+  height: 160px;
+  line-height: 260px;
+  padding: 20px;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+button, #submit{
+  background-color: darkorange;
+  font-size:10px;
+  color: white;
+  margin:10px auto;
+}
+
+.studentTable, .edit input{
+  margin:20px 5px;
+}
+
+.edit div, #left{
+  margin-left: 20px;
+}
