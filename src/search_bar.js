@@ -20,7 +20,7 @@ import React, { Component } from 'react';
 // updates the state for the term
     onInputChange(term) {
       this.setState({term});
-      this.props.onSearchTermChange(term);
+      this.props.onSearchTermChange(term.toUpperCase());
     }
   }
 
