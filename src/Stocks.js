@@ -25,8 +25,9 @@ class Stocks extends Component {
         <div>
           {this.props.Stocks.map(function(stock){
             return (
-              <div>
+              <div key={stock.symbol}>
                 {stock.symbol}
+                price: {stock.last_trade_price}
               </div>
             );
           })}
