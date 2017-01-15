@@ -14,22 +14,31 @@ const SymbolDetail = ({symbol}) => {
   return (
     <div>
       <div className="details">
+      Valid entries example single = msft example multiple = msft,pola,cvs
+      can not have spaces needs coma in between
+      
         <div>
-        <ul>
-            <li>Symbol Name: {symbol[0].symbol}</li>
-            <li>Adjusted Previous Close: {symbol[0].adjusted_previous_close}</li>
-            <li>Ask Price: {symbol[0].ask_price}</li>
-            <li>Ask Size: {symbol[0].ask_size}</li>
-            <li>Bid Price: {symbol[0].bid_price}</li>
-            <li>Bid Size: {symbol[0].bid_size}</li>
-            <li>Instrument: {symbol[0].instrument}</li>
-            <li>Last extended Hours Trade Price: {symbol[0].last_extended_hours_trade_price}</li>
-            <li>Last Trade Price: {symbol[0].last_trade_price}</li>
-            <li>Last Trade Price Source: {symbol[0].last_trade_price_source}</li>
-            <li>Previous Close: {symbol[0].previous_close}</li>
-            <li>Previous Close Date: {symbol[0].previous_close_date}</li>
-            <li>Updated At: {symbol[0].updated_at}</li>
-        </ul>
+          {symbol.map(function(stock){
+            return (
+              <div key={stock.symbol}>
+              <ul>
+                <li>Symbol Name: {stock.symbol}</li>
+                <li>Adjusted Previous Close: {stock.adjusted_previous_close}</li>
+                <li>Ask Price: {stock.ask_price}</li>
+                <li>Ask Size: {stock.ask_size}</li>
+                <li>Bid Price: {stock.bid_price}</li>
+                <li>Bid Size: {stock.bid_size}</li>
+                <li>Instrument: {stock.instrument}</li>
+                <li>Last extended Hours Trade Price: {stock.last_extended_hours_trade_price}</li>
+                <li>Last Trade Price: {stock.last_trade_price}</li>
+                <li>Last Trade Price Source: {stock.last_trade_price_source}</li>
+                <li>Previous Close: {stock.previous_close}</li>
+                <li>Previous Close Date: {stock.previous_close_date}</li>
+                <li>Updated At: {stock.updated_at}</li>
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
