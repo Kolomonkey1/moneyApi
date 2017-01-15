@@ -11,7 +11,8 @@ import React, { Component } from 'react';
     render() {
       return (
         <div className="search-bar">
-          <input 
+        Stocks:
+          <input
             value={this.state.term}
             onChange={event => this.onInputChange(event.target.value)} />
           </div>

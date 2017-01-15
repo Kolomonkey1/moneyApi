@@ -11,11 +11,11 @@ const SymbolDetail = ({symbol}) => {
       <div className="details">
       Valid entries example single = msft example multiple = msft,pola,cvs
       can not have spaces needs coma in between
-      
+
         <div>
           {symbol.map(function(stock){
             return (
-              <div key={stock.symbol}>
+              <div key={stock.symbol} className="stocksContainer">
               <ul>
                 <li>Symbol Name: {stock.symbol}</li>
                 <li>Adjusted Previous Close: {stock.adjusted_previous_close}</li>

@@ -1,3 +1,4 @@
+import './App.css';
 import _ from 'lodash';
 import React, { Component } from 'react';
 import SearchBar from './search_bar';
@@ -7,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { 
+    this.state = {
    };
    this.symbolSearch('MSFT');
   }
@@ -32,10 +33,10 @@ class App extends Component {
       })
     })
   }
-  render() { 
+  render() {
 
     const symbolSearch = _.debounce((term) => { this.symbolSearch(term) }, 500);
-    
+
     return (
       <div>
         <SearchBar onSearchTermChange={symbolSearch} />
